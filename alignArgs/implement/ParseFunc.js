@@ -57,7 +57,7 @@ function ParseFunc(line) {
                 }
                 break;
             case STATE.ARG_START:
-                if (curr.match(/[a-zA-Z_]/)) {
+                if (curr.match(/[a-zA-Z_0-9]/)) {
                     args[argIdx] += curr;
                     state = STATE.ARG_MIDDLE;
                 }
