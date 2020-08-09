@@ -4,38 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Align arguments</title>
-    <link rel="stylesheet" href="./css/css.css" />
-    <script src="./alignArgs/implement/AlignArgs.js"></script>
-    <script src="./alignArgs/implement/FuncCall.js"></script>
-    <script src="./alignArgs/implement/ParseFunc.js"></script>
-
-    <script language="javascript">
-      function DoAlignArgs() {
-        var inputTextArea = document.getElementById("inputText");
-
-        var inputText = document.getElementById("inputText").value;
-        var outputText = AlignArgs.Do(inputText + "") + "";
-
-        var outputTextArea = document.getElementById("outputText");
-        outputTextArea.value = outputText;
-        outputTextArea.style.height = inputTextArea.scrollHeight + 30 + "px";
-
-        var width = (outputTextArea.clientWidth + 1) + "px"
-        outputTextArea.style.width = width + "px";
-
-      }
-    </script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-
-      <br />
-      <textarea id="inputText" class="monospaced"  oninput='this.style.height = "";this.style.height = this.scrollHeight + 30 + "px"' spellcheck="false" wrap="soft" rows = 10></textarea>
-      <br />
-
-      <input type="button" value="Align arguments" onclick="DoAlignArgs()" />
-      <br />
-
-      <textarea id="outputText" class="monospaced" readonly onforminput='this.style.height = "";this.style.height = this.scrollHeight + "px"' spellcheck="false" wrap="soft" rows = 10></textarea>
-      <br />
-    </body>
+    <a href='https://yongsooim.github.io/alignargs'>Align arguments</a>
+  </body>
 </html>
